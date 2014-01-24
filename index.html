@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Paradigm Shift - jsFiddle demo</title>
+  <script type='text/javascript' src='http://code.jquery.com/jquery-git2.js'></script>
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- Temporary code for alignment and color schemes -->
+
+<!-- this is the color scheme -->
+<img src="http://s7.postimg.org/o7si90ex7/colorscheme.png" id="colorscheme" /> 
+
+<!-- this is the grid -->
+
+<img src="http://s27.postimg.org/gdqdf6wtf/paradigmshift_backgroundgrid.png" id="gridtemp" /> 
+
+<!-- checklist: NOTHING HERE YET! -->
+
+<!-- Resource Pie -->
+
+<img class="clickpast, pieplace" src='http://s14.postimg.org/dqgviegod/pie.png' border='0' alt="pie" />
+
+<img class="hidden, pieplace" src='http://s21.postimg.org/3ritjixmr/pieelec.png' border='0' alt="pieelec" />
+
+<img class="hidden, pieplace" src='http://s21.postimg.org/z11ca9p6r/piemine.png' border='0' alt="piemine" />
+
+<img class="hidden, pieplace" src='http://s21.postimg.org/ocxlbff7n/pieproc.png' border='0' alt="pieproc" />
+
+<img id="clickpast, pieplace" src='http://s14.postimg.org/yrbih29kd/pieshade.png' border='0' alt="pieshade" />
+
+
+<!-- background -->
+<div class="container">
+     <h1><img src="http://s29.postimg.org/xi6987dfb/titletemp.gif" id="title" /><small>0.0.3</small></h1>
+
+    <input id="whatever" type="image" src="https://discussions.apple.com/___sbsstatic___/migration-images/200/20011164-1.gif" alt="SUBMIT"></input>
+     <h1><small>The Zero Paradigm</small></h1>
+
+    <div id="saveload">
+        <button id="save" type="button" class="btn btn-primary">Save</button>
+        <button id="load" type="button" class="btn btn-primary">Load</button>
+    </div>
+    <ul class="nav nav-tabs" id="myTab">
+        <li><a href="#home" data-toggle="tab">Home</a>
+
+        </li>
+        <li><a href="#robots" data-toggle="tab"><span id="robot_tab">Undiscovered</span></a>
+
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="home">
+             <h3>Manual Resources</h3>
+
+            <button id="mine_manual" type="button" class="btn btn-primary" onclick="orePlusManual()">Mine</button>
+            <button id="processors_manual" type="button" class="btn btn-primary" onclick="processorsPlusManual()">Build Processors</button>
+            <button id="electricity_manual" type="button" class="btn btn-primary" onclick="electricityPlusManual()">Generate Electricity</button>
+             <h3>Automatic Resources</h3>
+
+            <button id="mine_automatic" type="button" class="btn btn-primary"><span id="mining_wedge_on">Turn on mining</span>
+
+            </button>
+            <button id="processors_automatic" type="button" class="btn btn-primary"><span id="processors_wedge_on">Turn on building</span>
+
+            </button>
+            <button id="electricity_automatic" type="button" class="btn btn-primary"><span id="electricity_wedge_on">Turn on generation</span>
+
+            </button>
+             <h3>Current Resources</h3>
+
+            <table>
+                <tr>
+                    <td>Ore:</td>
+                    <td id="total_ore_clicks">0</td>
+                    <td>+</td>
+                    <td id="ore_per_second">0</td>
+                    <td>per</td>
+                    <td id="ore_time_period">1.00</td>
+                    <td>second</td>
+                </tr>
+                <tr>
+                    <td>Processors:</td>
+                    <td id="total_processor_clicks">0</td>
+                    <td>+</td>
+                    <td id="processors_per_second">0</td>
+                    <td>per</td>
+                    <td id="processor_time_period">1.00</td>
+                    <td>second</td>
+                </tr>
+                <tr>
+                    <td>Electricity:</td>
+                    <td id="total_electricity_clicks">0</td>
+                    <td>+</td>
+                    <td id="electricity_per_second">0</td>
+                    <td>per</td>
+                    <td id="electricity_time_period">1.00</td>
+                    <td>second</td>
+                </tr>
+                <tr>
+                    <td><span id="metal_discovered">What could this be?</span>
+
+                    </td>
+                    <td id="total_metal_clicks">0</td>
+                    <td>+</td>
+                    <td id="metal_per_second">0</td>
+                    <td>per</td>
+                    <td id="metal_time_period">1.00</td>
+                    <td>second</td>
+                </tr>
+                <tr>
+                    <td><span id="alloy_discovered">What could this be?</span>
+
+                    </td>
+                    <td id="total_alloy_clicks">0</td>
+                    <td>+</td>
+                    <td id="alloy_per_second">0</td>
+                    <td>per</td>
+                    <td id="alloy_time_period">1.00</td>
+                    <td>second</td>
+                </tr>
+            </table>
+             <h3>Transform (Manually!)</h3>
+
+            <button id="ore_to_metal_manual" type="button" class="btn btn-primary"><span id="ore_to_metal_manual_discovered">Huh?</span>
+
+            </button>
+            <button id="metal_to_alloy_manual" type="button" class="btn btn-primary"><span id="metal_to_alloy_manual_discovered">Huh?</span>
+
+            </button>
+             <h3>Transform (Automatically!)</h3>
+
+            <button id="ore_to_metal_automatic" type="button" class="btn btn-primary"><span id="ore_to_metal_automatic_discovered">Huh?</span>
+
+            </button>
+            <button id="metal_to_alloy_automatic" type="button" class="btn btn-primary"><span id="metal_to_alloy_automatic_discovered">Huh?</span>
+
+            </button>
+        </div>
+        <div class="tab-pane fade" id="robots">
+            <br />
+            <button id="robot_1" type="button" class="btn btn-primary"><span id="robot_1_text">Undiscovered</span>
+
+            </button>
+            <button id="robot_2" type="button" class="btn btn-primary"><span id="robot_2_text">Undiscovered</span>
+
+            </button>
+            <button id="robot_3" type="button" class="btn btn-primary"><span id="robot_3_text">Undiscovered</span>
+
+            </button>
+            <button id="robot_4" type="button" class="btn btn-primary"><span id="robot_4_text">Undiscovered</span>
+
+            </button>
+            <button id="robot_5" type="button" class="btn btn-primary"><span id="robot_5_text">Undiscovered</span>
+
+            </button>
+            <br />
+            <br />
+            <button id="robot_6" type="button" class="btn btn-primary"><span id="robot_6_text">Undiscovered</span>
+
+            </button>
+            <button id="robot_7" type="button" class="btn btn-primary"><span id="robot_7_text">Undiscovered</span>
+
+            </button>
+            <button id="robot_8" type="button" class="btn btn-primary"><span id="robot_8_text">Undiscovered</span>
+
+            </button>
+            <button id="robot_9" type="button" class="btn btn-primary"><span id="robot_9_text">Undiscovered</span>
+
+            </button>
+            <button id="robot_10" type="button" class="btn btn-primary"><span id="robot_10_text">Undiscovered</span>
+
+            </button>
+             <h3>Selected Robot: <span id="robot_selected">None</span></h3>
+
+            <button id="robot_electricity" type="button" class="btn btn-primary"><span id="robot_electricity_text">Undiscovered</span>
+
+            </button>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $('#myTab a:first').tab('show')
+        })
+    </script>
+</div>
+</body>
+</html>
