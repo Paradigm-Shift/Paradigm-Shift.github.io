@@ -1,0 +1,181 @@
+/* temporary code for alignment and color schemes */
+
+#colorscheme {
+    position: absolute;
+    left: 400px;
+    z-index: -1000;
+}
+#gridtemp {
+    position: absolute;
+    z-index: -1001;
+}
+
+/* checklist: ///// explore granulareffects/particles such as gaussian blurs in-platform rather than renders DONE! Granular effects too complex but gaussian blurs are handled by boxshadow, if possible, UI should be on a single page with contextual popup menus rather than tabs, explore the idea of automating factory creation and destruction and the implications in UI, all images must be optimized .pngs, .apng not supported on all platforms so only the title will be .apng (for now), shine effects are 2px or less!!!<----  */
+
+
+
+
+
+/* resource pie */
+
+.pieplace {
+    position: absolute;
+    left: 15em;
+    top: 5em;
+    z-index: 3;
+}
+
+.clickpast {
+    pointer-events: none;
+}
+
+.hidden { visibility: hidden; }
+
+.unhidden { visibility: visible; } 
+
+/* color scheme */
+
+/* testing area */
+
+/* end color scheme */
+
+#background {
+
+    width: 100%;
+
+    height: 100%;
+
+    position: fixed;
+
+    left: 0px;
+
+    top: 0px;
+
+    z-index: -999;
+
+    /* Ensure div tag stays behind content; -999 might work, too. */
+
+}
+
+.stretch {
+
+    width:100%;
+
+    height:100%;
+
+}
+
+.tab-pane {
+
+    margin-bottom: 1em;
+
+}
+
+.nav-tabs {
+
+    border-bottom: 1px solid #CC894B;
+}
+
+.nav-tabs > li > a:hover {
+
+    border-color: #CC894B #CC894B #CC894B;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+
+    color: #F5DFCB;
+
+    cursor: default;
+
+    background-color: #562c05;
+
+    border: 1px solid #CC894B;
+
+    border-bottom-color: transparent;
+
+}
+
+body {
+
+    font-size: 1.6em;
+
+}
+
+h1 {
+
+    font-size: 2em;
+
+}
+
+h2 {
+
+    font-size: 2.6em
+
+}
+
+h3 {
+
+    border-bottom: 1px solid #78614B;
+
+    font-size: 4.23m;
+
+    color: #032F35;
+
+}
+
+td {
+    padding-right: 0.5em;
+    font-size: 1em;
+    color: #3A5C3F;
+}
+
+#saveload {
+
+    float: right;
+
+}
+
+/* global */
+
+.discard {
+
+    background-color: #c00000;
+
+    border-color: #c80000;
+
+}
+
+.discard:hover {
+
+    background-color: #b80000;
+
+    border-color: #b80000;
+
+}
+
+#protons_in_atom, #neutrons_in_atom, #electrons_in_atom {
+
+    width: auto;
+    display: inline;
+    margin-left: 1em;
+}
+#atom_creator {
+    margin-left: 2em;
+}
+#whatever {
+    position: absolute;
+    left:750px;
+    top:227px;
+    z-index: 1;
+    width: 40px;
+}
+.btn-primary {
+    margin-right: 0.5em;
+    background-color: #3C508A;
+    border-color: #04123A;
+    border-width: 3px;
+    color: #FFF;
+}
+body {
+    background-color: #C5CEEB;
+} 
