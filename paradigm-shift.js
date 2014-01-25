@@ -2,8 +2,14 @@ function classToggle() {
     this.classList.toggle('on');
     this.classList.toggle('off');
 }
-document.getElementById('on').addEventListener('onclick', classToggle, false);
-
+function addEventHandler(elem,eventType,handler) {
+ if (elem.addEventListener)
+     elem.addEventListener (eventType,handler,false);
+ else if (elem.attachEvent)
+     elem.attachEvent ('on'+eventType,handler); 
+}
+var img_on = document.getElementsByClassName("on")
+addEventHandler(b1,'onclick',classToggle());
 var player = {
     ore: 9,
     processors: 0,
