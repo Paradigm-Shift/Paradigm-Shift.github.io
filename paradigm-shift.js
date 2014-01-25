@@ -9,7 +9,7 @@ function addEventHandler(elem,eventType,handler) {
      elem.attachEvent ('on'+eventType,handler); 
 }
 var img_on = document.getElementsByClassName("on")
-addEventHandler(b1,'onclick',classToggle());
+addEventHandler(img_on,'onclick',classToggle());
 var player = {
     ore: 9,
     processors: 0,
