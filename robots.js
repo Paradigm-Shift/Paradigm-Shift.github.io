@@ -301,7 +301,7 @@ function robotElectricity() {
             if (player.robot_1_is_generating_electricity === false) {
                 player.robot_1_is_generating_electricity = true;
                 document.getElementById("robot_electricity_text").innerHTML = "Generating Electricity";
-                player.robot_electricity_add += robot_electricity_1_add_number;
+                player.robot_electricity_add += 1;
             } else if (player.robot_1_is_generating_electricity === true) {
                 player.robot_1_is_generating_electricity = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
