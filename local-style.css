@@ -13,31 +13,12 @@
 
 
 /* resource pie */
-
-.orb-pos {
-    position: absolute;
-    left: 30em;
-    top: 5em;
-    z-index: 3;
-}
-.orb-pos2 {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 3;
+.on {
+   opacity:1.0;
 }
 
-.orb-pos3 {
-    position: absolute;
-    left: 34px;
-    top: 23px;
-    z-index: 10;
-}
-.orb.glow {
-    
-}
-.orb.dim {
-    
+.off {
+    opacity:0.0;
 }
 .clickpast {
     pointer-events: none;
