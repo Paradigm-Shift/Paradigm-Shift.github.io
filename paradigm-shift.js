@@ -1,9 +1,8 @@
-function unhide(divID) {
-    var item = document.getElementById(divID);
-    if (item) {
-      item.className=(item.className=='hidden')?'unhidden':'hidden';
-    }
+function classToggle() {
+    this.classList.toggle('on');
+    this.classList.toggle('off');
 }
+document.querySelector('img').addEventListener('click', classToggle);
 
 var player = {
     ore: 9,
