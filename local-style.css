@@ -20,6 +20,12 @@
     top: 5em;
     z-index: 3;
 }
+.orb-pos2 {
+    position: absolute;
+    left: 5em;
+    top: 2em;
+    z-index: 3;
+}
 .orb.glow {
     
 }
