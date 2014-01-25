@@ -77,7 +77,7 @@ function addEventHandler(elem,eventType,handler) {
      elem.attachEvent ('on'+eventType,handler); 
 }
 var img_on = document.getElementsByClassName("on")
-addEventHandler(img_on,'onclick',orePlusManual());
+//addEventHandler(img_on,'onclick',orePlusManual());
 
 function orePlusManual() {
     if (player.ore == 10) {
