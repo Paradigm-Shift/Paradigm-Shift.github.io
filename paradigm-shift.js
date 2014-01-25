@@ -278,6 +278,7 @@ setInterval(function () {
     if (player.ore_automatic_transform_on === true) {
         oreToMetalManual();
     }
+    player.electricity += player.robot_electricity_add;
     update_total_clicks();
 }, 10000);
 
