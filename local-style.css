@@ -22,9 +22,13 @@
 }
 .orb-pos2 {
     position: absolute;
-    left: 5em;
-    top: 2em;
     z-index: 3;
+}
+
+.orb-pos3 {
+    position: absolute;
+    left: 34;
+top: 23;
 }
 .orb.glow {
     
