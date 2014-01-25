@@ -31,7 +31,10 @@ function reset_robot_text() {
     player.robot_8_selected = false;
     player.robot_9_selected = false;
     player.robot_10_selected = false;
+    player.robot_electricity_change = 0;
     player.robot_electricity_add = 0;
+    player.robot_electricity_add_change = 0;
+    player.robot_electricity_change_view = 0;
     player.robot_1_is_generating_electricity = false;
     player.robot_2_is_generating_electricity = false;
     player.robot_3_is_generating_electricity = false;
@@ -51,7 +54,8 @@ function robot1() {
                 player.alloy -= 10;
                 player.robot_1_bought = true;
                 player.robot_electricity_change--;
-                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change;
+                player.robot_electricity_change_view -= 10;
+                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change_view;
                 player.robots++;
                 document.getElementById("robot_1_text").innerHTML = "Robot 1";
                 return;
@@ -80,7 +84,8 @@ function robot2() {
                 player.alloy -= 10;
                 player.robot_2_bought = true;
                 player.robot_electricity_change--;
-                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change;
+                player.robot_electricity_change_view -= 10;
+                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change_view;
                 player.robots++;
                 document.getElementById("robot_2_text").innerHTML = "Robot 2";
             }
@@ -107,7 +112,8 @@ function robot3() {
                 player.alloy -= 10;
                 player.robot_3_bought = true;
                 player.robot_electricity_change--;
-                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change;
+                player.robot_electricity_change_view -= 10;
+                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change_view;
                 player.robots++;
                 document.getElementById("robot_3_text").innerHTML = "Robot 3";
             }
@@ -134,7 +140,8 @@ function robot4() {
                 player.alloy -= 10;
                 player.robot_4_bought = true;
                 player.robot_electricity_change--;
-                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change;
+                player.robot_electricity_change_view -= 10;
+                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change_view;
                 player.robots++;
                 document.getElementById("robot_4_text").innerHTML = "Robot 4";
             }
@@ -161,7 +168,8 @@ function robot5() {
                 player.alloy -= 10;
                 player.robot_5_bought = true;
                 player.robot_electricity_change--;
-                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change;
+                player.robot_electricity_change_view -= 10;
+                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change_view;
                 player.robots++;
                 document.getElementById("robot_5_text").innerHTML = "Robot 5";
             }
@@ -188,7 +196,8 @@ function robot6() {
                 player.alloy -= 10;
                 player.robot_6_bought = true;
                 player.robot_electricity_change--;
-                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change;
+                player.robot_electricity_change_view -= 10;
+                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change_view;
                 player.robots++;
                 document.getElementById("robot_6_text").innerHTML = "Robot 6";
             }
@@ -215,7 +224,8 @@ function robot7() {
                 player.alloy -= 10;
                 player.robot_7_bought = true;
                 player.robot_electricity_change--;
-                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change;
+                player.robot_electricity_change_view -= 10;
+                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change_view;
                 player.robots++;
                 document.getElementById("robot_7_text").innerHTML = "Robot 7";
             }
@@ -242,7 +252,8 @@ function robot8() {
                 player.alloy -= 10;
                 player.robot_8_bought = true;
                 player.robot_electricity_change--;
-                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change;
+                player.robot_electricity_change_view -= 10;
+                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change_view;
                 player.robots++;
                 document.getElementById("robot_8_text").innerHTML = "Robot 8";
             }
@@ -269,7 +280,8 @@ function robot9() {
                 player.alloy -= 10;
                 player.robot_9_bought = true;
                 player.robot_electricity_change--;
-                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change;
+                player.robot_electricity_change_view -= 10;
+                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change_view;
                 player.robots++;
                 document.getElementById("robot_9_text").innerHTML = "Robot 9";
             }
@@ -296,7 +308,8 @@ function robot10() {
                 player.alloy -= 10;
                 player.robot_10_bought = true;
                 player.robot_electricity_change--;
-                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change;
+                player.robot_electricity_change_view -= 10;
+                document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change_view;
                 player.robots++;
                 document.getElementById("robot_10_text").innerHTML = "Robot 10";
             }
