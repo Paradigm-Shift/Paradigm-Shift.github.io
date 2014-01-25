@@ -1,14 +1,10 @@
 /* temporary code for alignment and color schemes */
 
-#colorscheme {
-    position: absolute;
-    left: 400px;
-    z-index: -1000;
-}
 #gridtemp {
     position: absolute;
     z-index: -1001;
 }
+
 
 /* checklist: ///// explore granulareffects/particles such as gaussian blurs in-platform rather than renders DONE! Granular effects too complex but gaussian blurs are handled by boxshadow, if possible, UI should be on a single page with contextual popup menus rather than tabs, explore the idea of automating factory creation and destruction and the implications in UI, all images must be optimized .pngs, .apng not supported on all platforms so only the title will be .apng (for now), shine effects are 2px or less!!!<----  */
 
