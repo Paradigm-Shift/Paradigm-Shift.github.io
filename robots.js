@@ -21,6 +21,27 @@ function reset_robot_text() {
     player.robot_8_bought = false;
     player.robot_9_bought = false;
     player.robot_10_bought = false;
+    player.robot_1_selected = false;
+    player.robot_2_selected = false;
+    player.robot_3_selected = false;
+    player.robot_4_selected = false;
+    player.robot_5_selected = false;
+    player.robot_6_selected = false;
+    player.robot_7_selected = false;
+    player.robot_8_selected = false;
+    player.robot_9_selected = false;
+    player.robot_10_selected = false;
+    player.robot_electricity_add = 0;
+    player.robot_1_is_generating_electricity = false;
+    player.robot_2_is_generating_electricity = false;
+    player.robot_3_is_generating_electricity = false;
+    player.robot_4_is_generating_electricity = false;
+    player.robot_5_is_generating_electricity = false;
+    player.robot_6_is_generating_electricity = false;
+    player.robot_7_is_generating_electricity = false;
+    player.robot_8_is_generating_electricity = false;
+    player.robot_9_is_generating_electricity = false;
+    player.robot_10_is_generating_electricity = false;
 }
 
 function robot1() {
