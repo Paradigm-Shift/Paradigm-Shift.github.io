@@ -16,6 +16,7 @@ var player = {
     metal_automatic_transform: 0,
     robot_electricity_change: 0,
     robot_electricity_add_change: 0,
+    robot_electricity_change_view: 0,
     robots: 0,
     mine_automatic_wedge_on: false,
     processors_automatic_wedge_on: false,
