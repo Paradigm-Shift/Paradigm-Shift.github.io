@@ -301,101 +301,101 @@ function robotElectricity() {
             if (player.robot_1_is_generating_electricity === false) {
                 player.robot_1_is_generating_electricity = true;
                 document.getElementById("robot_electricity_text").innerHTML = "Generating Electricity";
-                player.robot_electricity_add += 1;
+                player.robot_electricity_add += player.robot_electricity_1_add_number;
             } else if (player.robot_1_is_generating_electricity === true) {
                 player.robot_1_is_generating_electricity = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
-                player.robot_electricity_add -= robot_electricity_1_add_number;
+                player.robot_electricity_add -= player.robot_electricity_1_add_number;
             }
         } else if (player.robot_2_selected === true) {
             if (player.robot_2_is_generating_electricity === false) {
                 player.robot_2_is_generating_electricity = true;
                 document.getElementById("robot_electricity_text").innerHTML = "Generating Electricity";
-                player.robot_electricity_add += robot_electricity_2_add_number;
+                player.robot_electricity_add += player.robot_electricity_2_add_number;
             } else if (player.robot_2_is_generating_electricity === true) {
                 player.robot_2_is_generating_electricity = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
-                player.robot_electricity_add -= robot_electricity_2_add_number;
+                player.robot_electricity_add -= player.robot_electricity_2_add_number;
             }
         } else if (player.robot_3_selected === true) {
             if (player.robot_3_is_generating_electricity === false) {
                 player.robot_3_is_generating_electricity = true;
                 document.getElementById("robot_electricity_text").innerHTML = "Generating Electricity";
-                player.robot_electricity_add += robot_electricity_3_add_number;
+                player.robot_electricity_add += player.robot_electricity_3_add_number;
             } else if (player.robot_3_is_generating_electricity === true) {
                 player.robot_3_is_generating_electricity = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
-                player.robot_electricity_add -= robot_electricity_3_add_number;
+                player.robot_electricity_add -= player.robot_electricity_3_add_number;
             }
         } else if (player.robot_4_selected === true) {
             if (player.robot_4_is_generating_electricity === false) {
                 player.robot_4_is_generating_electricity = true;
                 document.getElementById("robot_electricity_text").innerHTML = "Generating Electricity";
-                player.robot_electricity_add += robot_electricity_4_add_number;
+                player.robot_electricity_add += player.robot_electricity_4_add_number;
             } else if (player.robot_4_is_generating_electricity === true) {
                 player.robot_4_is_generating_electricity = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
-                player.robot_electricity_add -= robot_electricity_4_add_number;
+                player.robot_electricity_add -= player.robot_electricity_4_add_number;
             }
         } else if (player.robot_5_selected === true) {
             if (player.robot_5_is_generating_electricity === false) {
                 player.robot_5_is_generating_electricity = true;
                 document.getElementById("robot_electricity_text").innerHTML = "Generating Electricity";
-                player.robot_electricity_add += robot_electricity_5_add_number;
+                player.robot_electricity_add += player.robot_electricity_5_add_number;
             } else if (player.robot_5_is_generating_electricity === true) {
                 player.robot_5_is_generating_electricity = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
-                player.robot_electricity_add -= robot_electricity_5_add_number;
+                player.robot_electricity_add -= player.robot_electricity_5_add_number;
             }
         } else if (player.robot_6_selected === true) {
             if (player.robot_6_is_generating_electricity === false) {
                 player.robot_6_is_generating_electricity = true;
                 document.getElementById("robot_electricity_text").innerHTML = "Generating Electricity";
-                player.robot_electricity_add += robot_electricity_6_add_number;
+                player.robot_electricity_add += player.robot_electricity_6_add_number;
             } else if (player.robot_6_is_generating_electricity === true) {
                 player.robot_6_is_generating_electricity = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
-                player.robot_electricity_add -= robot_electricity_6_add_number;
+                player.robot_electricity_add -= player.robot_electricity_6_add_number;
             }
         } else if (player.robot_7_selected === true) {
             if (player.robot_7_is_generating_electricity === false) {
                 player.robot_7_is_generating_electricity = true;
                 document.getElementById("robot_electricity_text").innerHTML = "Generating Electricity";
-                player.robot_electricity_add += robot_electricity_7_add_number;
+                player.robot_electricity_add += player.robot_electricity_7_add_number;
             } else if (player.robot_7_is_generating_electricity === true) {
                 player.robot_7_is_generating_electricity = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
-                player.robot_electricity_add -= robot_electricity_7_add_number;
+                player.robot_electricity_add -= player.robot_electricity_7_add_number;
             }
         } else if (player.robot_8_selected === true) {
             if (player.robot_8_is_generating_electricity === false) {
                 player.robot_8_is_generating_electricity = true;
                 document.getElementById("robot_electricity_text").innerHTML = "Generating Electricity";
-                player.robot_electricity_add += robot_electricity_8_add_number;
+                player.robot_electricity_add += player.robot_electricity_8_add_number;
             } else if (player.robot_8_is_generating_electricity === true) {
                 player.robot_8_is_generating_electricity = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
-                player.robot_electricity_add -= robot_electricity_8_add_number;
+                player.robot_electricity_add -= player.robot_electricity_8_add_number;
             }
         } else if (player.robot_9_selected === true) {
             if (player.robot_9_is_generating_electricity === false) {
                 player.robot_9_is_generating_electricity = true;
                 document.getElementById("robot_electricity_text").innerHTML = "Generating Electricity";
-                player.robot_electricity_add += robot_electricity_9_add_number;
+                player.robot_electricity_add += player.robot_electricity_9_add_number;
             } else if (player.robot_9_is_generating_electricity === true) {
                 player.robot_9_is_generating_electricity = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
-                player.robot_electricity_add -= robot_electricity_9_add_number;
+                player.robot_electricity_add -= player.robot_electricity_9_add_number;
             }
         } else if (player.robot_10_selected === true) {
             if (player.robot_10_is_generating_electricity === false) {
                 player.robot_10_is_generating_electricity = true;
                 document.getElementById("robot_electricity_text").innerHTML = "Generating Electricity";
-                player.robot_electricity_add += robot_electricity_10_add_number;
+                player.robot_electricity_add += player.robot_electricity_10_add_number;
             } else if (player.robot_10_is_generating_electricity === true) {
                 player.robot_10_is_generating_electricity = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
-                player.robot_electricity_add -= robot_electricity_10_add_number;
+                player.robot_electricity_add -= player.robot_electricity_10_add_number;
             }
         } 
     }
