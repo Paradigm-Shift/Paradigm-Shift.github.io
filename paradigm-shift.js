@@ -1,4 +1,3 @@
-
 function addEventHandler(elem,eventType,handler) {
  if (elem.addEventListener)
      elem.addEventListener (eventType,handler,false);
@@ -6,7 +5,7 @@ function addEventHandler(elem,eventType,handler) {
      elem.attachEvent ('on'+eventType,handler); 
 }
 var img_on = document.getElementsByClassName("on")
-addEventHandler(img_on,'onclick',classToggle(img_on));
+addEventHandler(img_on,'onclick',orePlusManual());
 var player = {
     ore: 9,
     processors: 0,
