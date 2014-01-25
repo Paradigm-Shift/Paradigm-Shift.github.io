@@ -62,7 +62,16 @@ var player = {
     robot_9_is_generating_electricity: false,
     robot_10_is_generating_electricity: false,
     robot_electricity_add: 0,
-    robot_electricity_add_number: 1,
+    robot_electricity_1_add_number: 1,
+    robot_electricity_2_add_number: 1,
+    robot_electricity_3_add_number: 1,
+    robot_electricity_4_add_number: 1,
+    robot_electricity_5_add_number: 1,
+    robot_electricity_6_add_number: 1,
+    robot_electricity_7_add_number: 1,
+    robot_electricity_8_add_number: 1,
+    robot_electricity_9_add_number: 1,
+    robot_electricity_10_add_number: 1,
     whatever_area: 10,
     whatever_area_name: "10px"
 };
