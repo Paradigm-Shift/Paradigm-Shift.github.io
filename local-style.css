@@ -18,20 +18,22 @@
 
 /* resource pie */
 
-.pieplace {
+.orb-pos {
     position: absolute;
     left: 15em;
     top: 5em;
     z-index: 3;
 }
-
+.orb.glow {
+    
+}
+.orb.dim {
+    
+}
 .clickpast {
     pointer-events: none;
 }
 
-.hidden { visibility: hidden; }
-
-.unhidden { visibility: visible; } 
 
 /* color scheme */
 
