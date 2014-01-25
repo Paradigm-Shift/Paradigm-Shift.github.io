@@ -70,13 +70,13 @@ var player = {
     whatever_area_name: "10px"
 };
 
-function addEventHandler(elem,eventType,handler) {
- if (elem.addEventListener)
-     elem.addEventListener (eventType,handler,false);
- else if (elem.attachEvent)
-     elem.attachEvent ('on'+eventType,handler); 
-}
-var img_on = document.getElementsByClassName("on")
+//function addEventHandler(elem,eventType,handler) {
+// if (elem.addEventListener)
+//     elem.addEventListener (eventType,handler,false);
+// else if (elem.attachEvent)
+//     elem.attachEvent ('on'+eventType,handler); 
+//}
+//var img_on = document.getElementsByClassName("on")
 //addEventHandler(img_on,'onclick',orePlusManual());
 
 function orePlusManual() {
