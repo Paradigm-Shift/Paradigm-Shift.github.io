@@ -62,6 +62,7 @@ var player = {
     robot_9_is_generating_electricity: false,
     robot_10_is_generating_electricity: false,
     robot_electricity_add: 0,
+    robot_electricity_add_number: 1,
     whatever_area: 10,
     whatever_area_name: "10px"
 };
