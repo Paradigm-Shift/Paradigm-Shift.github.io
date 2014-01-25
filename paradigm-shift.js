@@ -2,7 +2,7 @@ function classToggle() {
     this.classList.toggle('on');
     this.classList.toggle('off');
 }
-document.getElementById('on').addEventListener('onclick', classToggle);
+document.getElementById('on').addEventListener('onclick', classToggle, false);
 
 var player = {
     ore: 9,
