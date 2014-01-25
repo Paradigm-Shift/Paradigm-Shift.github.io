@@ -1,6 +1,4 @@
-function classToggle(elem) {
-    elem.classList.toggle();
-}
+
 function addEventHandler(elem,eventType,handler) {
  if (elem.addEventListener)
      elem.addEventListener (eventType,handler,false);
