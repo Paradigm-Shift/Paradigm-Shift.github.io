@@ -256,8 +256,8 @@ function metalToAlloyAutomatic() {
             document.getElementById("metal_to_alloy_automatic_discovered").innerHTML = "Metal to Alloy";
             return;
         }
-        player.ore_automatic_transform_on = true;
-        document.getElementById("ore_to_metal_automatic_discovered").innerHTML = "Ore to Metal on!";
+        player.metal_automatic_transform_on = true;
+        document.getElementById("metal_to_alloy_automatic_discovered").innerHTML = "Metal to Alloy on!";
     }
 };
 
@@ -281,6 +281,9 @@ setInterval(function () {
     }
     if (player.ore_automatic_transform_on === true) {
         oreToMetalManual();
+    }
+    if (player.metal_automatic_transform_on === true) {
+        metalToAlloyManual();
     }
     player.electricity += player.robot_electricity_add;
     update_total_clicks();
