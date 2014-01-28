@@ -474,3 +474,28 @@ function robotElectricity() {
         } 
     }
 };
+function robotUpgrade(){
+    if (player.robot_discovered === true) {
+        if (player.robot_1_selected === true) {
+            // stuff goes here!
+        } else if (player.robot_2_selected === true) {
+            // stuff goes here!
+        } else if (player.robot_3_selected === true) {
+            // stuff goes here!
+        } else if (player.robot_4_selected === true) {
+            // stuff goes here!
+        } else if (player.robot_5_selected === true) {
+            // stuff goes here!
+        } else if (player.robot_6_selected === true) {
+            // stuff goes here!
+        } else if (player.robot_7_selected === true) {
+            // stuff goes here!
+        } else if (player.robot_8_selected === true) {
+            // stuff goes here!
+        } else if (player.robot_9_selected === true) {
+            // stuff goes here!
+        } else if (player.robot_10_selected === true) {
+            // stuff goes here!
+        }
+    }
+};
