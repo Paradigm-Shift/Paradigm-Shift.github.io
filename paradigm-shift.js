@@ -25,6 +25,7 @@ var player = {
     metal_automatic_transform_on: false,
     metal_discovered: false,
     alloy_discovered: false,
+    ai_discovered: false,
     robot_discovered: false,
     robot_1_bought: false,
     robot_2_bought: false,
@@ -102,6 +103,14 @@ function processorsPlusManual() {
     }
     player.processors++;
     update_total_clicks();
+    if (player.processors == 10) {
+        if (player.ai_discovered === false) {
+            document.getElementById("processors_to_ai_manual_discovered").innerHTML = "Processors to AI Chip";
+            document.getElementById("processors_to_ai_automatic_discovered").innerHTML = "Processors to AI Chip";
+            document.getElementById("ai_discovered").innerHTML = "AI Chips:";
+            player.ai_discovered = true;
+        }
+    }
 }
 
 function electricityPlusManual() {
