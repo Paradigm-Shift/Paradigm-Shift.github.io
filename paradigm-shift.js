@@ -4,16 +4,19 @@ var player = {
     electricity: 0,
     metal: 9,
     alloy: 9,
+    ai_chips: 0,
     ore_per_second_view: 0,
     processors_per_second_view: 0,
     electricity_per_second_view: 0,
     metal_per_second_view: 0,
     alloy_per_second_view: 0,
+    ai_per_second_view: 0,
     ore_per_time_wedge: 0,
     processors_per_time_wedge: 0,
     electricity_per_time_wedge: 0,
     ore_automatic_transform: 0,
     metal_automatic_transform: 0,
+    ai_automatic_transform: 0,
     robot_electricity_change: 0,
     robot_electricity_add_change: 0,
     robot_electricity_change_view: 0,
@@ -161,6 +164,7 @@ function metalToAlloyManual() {
                 document.getElementById("robot_9_text").innerHTML = "Buy Robot 9";
                 document.getElementById("robot_10_text").innerHTML = "Buy Robot 10";
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
+                document.getElementById("robot_upgrade_text").innerHTML = "Upgrade"
                 player.robot_discovered = true;
             }
         }
