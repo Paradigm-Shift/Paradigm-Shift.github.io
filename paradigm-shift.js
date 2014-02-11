@@ -212,7 +212,9 @@ function metalToAlloyManual() {
                 document.getElementById("robot_9_text").innerHTML = "Buy Robot 9";
                 document.getElementById("robot_10_text").innerHTML = "Buy Robot 10";
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
-                document.getElementById("robot_upgrade_text").innerHTML = "Upgrade"
+                document.getElementById("robot_processors_text").innerHTML = "Generate Processors";
+                document.getElementById("robot_ore_text").innerHTML = "Generate Ore";
+                document.getElementById("robot_upgrade_text").innerHTML = "Upgrade";
                 player.robot_discovered = true;
             }
         }
