@@ -1,10 +1,10 @@
 var player = {
     ore: 9,
-    processors: 0,
+    processors: 9,
     electricity: 0,
     metal: 9,
     alloy: 9,
-    ai_chips: 0,
+    ai_chips: 9,
     ore_per_second_view: 0,
     processors_per_second_view: 0,
     electricity_per_second_view: 0,
