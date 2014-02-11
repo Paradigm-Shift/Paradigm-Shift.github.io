@@ -177,6 +177,7 @@ function processorsToAiManual() {
         return;
     }
     if (player.processors == 10) {
+        player.processors--;
         player.ai_chips++;
         update_total_clicks();
     }
