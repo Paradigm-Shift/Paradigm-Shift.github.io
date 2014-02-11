@@ -172,6 +172,16 @@ function metalToAlloyManual() {
     update_total_clicks();
 }
 
+function processorsToAiManual() {
+    if (player.ai_chips == 10) {
+        return;
+    }
+    if (player.processors == 10) {
+        player.ai_chips++;
+        update_total_clicks();
+    }
+}
+
 function mineAutomatic() {
     if (player.mine_automatic_wedge_on === true) {
         player.mine_automatic_wedge_on = false;
@@ -280,6 +290,7 @@ function update_total_clicks() {
     document.getElementById("total_electricity_clicks").innerHTML = player.electricity;
     document.getElementById("total_metal_clicks").innerHTML = player.metal;
     document.getElementById("total_alloy_clicks").innerHTML = player.alloy;
+    document.getElementById("total_ai_clicks").innerHTML = player.ai_chips;
 }
 
 setInterval(function () {
