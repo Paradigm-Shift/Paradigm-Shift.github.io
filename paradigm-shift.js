@@ -373,6 +373,9 @@ setInterval(function () {
         document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change;
         reset_robot_text();
     }
+    if (player.processors < 10){
+        player.processors = player.processors + player.robot_processors_add;
+    }
     update_total_clicks();
     // more stuff goes here
 }, 1000);
