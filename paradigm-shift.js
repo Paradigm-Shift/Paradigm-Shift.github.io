@@ -347,6 +347,7 @@ function update_total_clicks() {
 setInterval(function () {
     if (player.ore < 10) {
         player.ore = player.ore + player.ore_per_time_wedge;
+        player.ore = player.ore + player.robot_ore_add;
     }
     if (player.processors < 10) {
         player.processors = player.processors + player.processors_per_time_wedge;
