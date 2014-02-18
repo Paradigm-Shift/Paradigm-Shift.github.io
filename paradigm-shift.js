@@ -350,9 +350,11 @@ setInterval(function () {
     }
     if (player.processors < 10) {
         player.processors = player.processors + player.processors_per_time_wedge;
+        player.processors = player.processors + player.robot_processors_add;
     }
     if (player.electricity < 10) {
         player.electricity = player.electricity + player.electricity_per_time_wedge;
+        player.electricity += player.robot_electricity_add;
     }
     if (player.ore_automatic_transform_on === true) {
         oreToMetalManual();
@@ -360,7 +362,7 @@ setInterval(function () {
     if (player.metal_automatic_transform_on === true) {
         metalToAlloyManual();
     }
-    player.electricity += player.robot_electricity_add;
+    
     update_total_clicks();
 }, 10000);
 
@@ -372,9 +374,6 @@ setInterval(function () {
         player.robots = 0;
         document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change;
         reset_robot_text();
-    }
-    if (player.processors < 10){
-        player.processors = player.processors + player.robot_processors_add;
     }
     update_total_clicks();
     // more stuff goes here
