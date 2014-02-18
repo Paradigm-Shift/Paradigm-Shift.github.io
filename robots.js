@@ -292,6 +292,151 @@ function robotProcessors() {
         } 
     }
 };
+function robotOre() {
+    if (player.robot_discovered === true) {
+        if (player.robot_1_selected === true) {
+            if (player.robot_1_is_generating_ore === false) {
+                player.robot_1_is_generating_ore = true;
+                document.getElementById("robot_ore_text").innerHTML = "Generating ore";
+                player.robot_ore_add += player.robot_ore_1_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            } else if (player.robot_1_is_generating_ore === true) {
+                player.robot_1_is_generating_ore = false;
+                document.getElementById("robot_ore_text").innerHTML = "Generate ore";
+                player.robot_ore_add -= player.robot_ore_1_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            }
+        } else if (player.robot_2_selected === true) {
+            if (player.robot_2_is_generating_ore === false) {
+                player.robot_2_is_generating_ore = true;
+                document.getElementById("robot_ore_text").innerHTML = "Generating ore";
+                player.robot_ore_add += player.robot_ore_2_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            } else if (player.robot_2_is_generating_ore === true) {
+                player.robot_2_is_generating_ore = false;
+                document.getElementById("robot_ore_text").innerHTML = "Generate ore";
+                player.robot_ore_add -= player.robot_ore_2_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            }
+        } else if (player.robot_3_selected === true) {
+            if (player.robot_3_is_generating_ore === false) {
+                player.robot_3_is_generating_ore = true;
+                document.getElementById("robot_ore_text").innerHTML = "Generating ore";
+                player.robot_ore_add += player.robot_ore_3_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            } else if (player.robot_3_is_generating_ore === true) {
+                player.robot_3_is_generating_ore = false;
+                document.getElementById("robot_ore_text").innerHTML = "Generate ore";
+                player.robot_ore_add -= player.robot_ore_3_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            }
+        } else if (player.robot_4_selected === true) {
+            if (player.robot_4_is_generating_ore === false) {
+                player.robot_4_is_generating_ore = true;
+                document.getElementById("robot_ore_text").innerHTML = "Generating ore";
+                player.robot_ore_add += player.robot_ore_4_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            } else if (player.robot_4_is_generating_ore === true) {
+                player.robot_4_is_generating_ore = false;
+                document.getElementById("robot_ore_text").innerHTML = "Generate ore";
+                player.robot_ore_add -= player.robot_ore_4_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            }
+        } else if (player.robot_5_selected === true) {
+            if (player.robot_5_is_generating_ore === false) {
+                player.robot_5_is_generating_ore = true;
+                document.getElementById("robot_ore_text").innerHTML = "Generating ore";
+                player.robot_ore_add += player.robot_ore_5_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            } else if (player.robot_5_is_generating_ore === true) {
+                player.robot_5_is_generating_ore = false;
+                document.getElementById("robot_ore_text").innerHTML = "Generate ore";
+                player.robot_ore_add -= player.robot_ore_5_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            }
+        } else if (player.robot_6_selected === true) {
+            if (player.robot_6_is_generating_ore === false) {
+                player.robot_6_is_generating_ore = true;
+                document.getElementById("robot_ore_text").innerHTML = "Generating ore";
+                player.robot_ore_add += player.robot_ore_6_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            } else if (player.robot_6_is_generating_ore === true) {
+                player.robot_6_is_generating_ore = false;
+                document.getElementById("robot_ore_text").innerHTML = "Generate ore";
+                player.robot_ore_add -= player.robot_ore_6_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            }
+        } else if (player.robot_7_selected === true) {
+            if (player.robot_7_is_generating_ore === false) {
+                player.robot_7_is_generating_ore = true;
+                document.getElementById("robot_ore_text").innerHTML = "Generating ore";
+                player.robot_ore_add += player.robot_ore_7_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            } else if (player.robot_7_is_generating_ore === true) {
+                player.robot_7_is_generating_ore = false;
+                document.getElementById("robot_ore_text").innerHTML = "Generate ore";
+                player.robot_ore_add -= player.robot_ore_7_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            }
+        } else if (player.robot_8_selected === true) {
+            if (player.robot_8_is_generating_ore === false) {
+                player.robot_8_is_generating_ore = true;
+                document.getElementById("robot_ore_text").innerHTML = "Generating ore";
+                player.robot_ore_add += player.robot_ore_8_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            } else if (player.robot_8_is_generating_ore === true) {
+                player.robot_8_is_generating_ore = false;
+                document.getElementById("robot_ore_text").innerHTML = "Generate ore";
+                player.robot_ore_add -= player.robot_ore_8_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            }
+        } else if (player.robot_9_selected === true) {
+            if (player.robot_9_is_generating_ore === false) {
+                player.robot_9_is_generating_ore = true;
+                document.getElementById("robot_ore_text").innerHTML = "Generating ore";
+                player.robot_ore_add += player.robot_ore_9_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            } else if (player.robot_9_is_generating_ore === true) {
+                player.robot_9_is_generating_ore = false;
+                document.getElementById("robot_ore_text").innerHTML = "Generate ore";
+                player.robot_ore_add -= player.robot_ore_9_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            }
+        } else if (player.robot_10_selected === true) {
+            if (player.robot_10_is_generating_ore === false) {
+                player.robot_10_is_generating_ore = true;
+                document.getElementById("robot_ore_text").innerHTML = "Generating ore";
+                player.robot_ore_add += player.robot_ore_10_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            } else if (player.robot_10_is_generating_ore === true) {
+                player.robot_10_is_generating_ore = false;
+                document.getElementById("robot_ore_text").innerHTML = "Generate ore";
+                player.robot_ore_add -= player.robot_ore_10_add_number;
+                player.robot_ore_add_change = player.robot_ore_change_view + player.robot_ore_add;
+                document.getElementById("ore_per_second").innerHTML = player.robot_ore_add_change;
+            }
+        } 
+    }
+};
 function robotUpgrade(){
     if (player.robot_discovered === true) {
         if (player.robot_1_selected === true) {
