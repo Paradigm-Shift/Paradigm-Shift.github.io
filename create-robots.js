@@ -23,6 +23,7 @@ function robot1() {
                 player.robot_1_selected = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
                 document.getElementById("robot_selected").innerHTML = "None";
+                document.getElementById("robot_level").innerHTML = "0";
             }
 
         }
@@ -53,6 +54,7 @@ function robot2() {
                 player.robot_2_selected = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
                 document.getElementById("robot_selected").innerHTML = "None";
+                document.getElementById("robot_level").innerHTML = "0";
             }
         }
     }
@@ -82,6 +84,7 @@ function robot3() {
                 player.robot_3_selected = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
                 document.getElementById("robot_selected").innerHTML = "None";
+                document.getElementById("robot_level").innerHTML = "0";
             }
         }
     }
@@ -111,6 +114,7 @@ function robot4() {
                 player.robot_4_selected = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
                 document.getElementById("robot_selected").innerHTML = "None";
+                document.getElementById("robot_level").innerHTML = "0";
             }
         }
     }
@@ -140,6 +144,7 @@ function robot5() {
                 player.robot_5_selected = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
                 document.getElementById("robot_selected").innerHTML = "None";
+                document.getElementById("robot_level").innerHTML = "0";
             }
         }
     }
@@ -169,6 +174,7 @@ function robot6() {
                 player.robot_6_selected = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
                 document.getElementById("robot_selected").innerHTML = "None";
+                document.getElementById("robot_level").innerHTML = "0";
             }
         }
     }
@@ -198,6 +204,7 @@ function robot7() {
                 player.robot_7_selected = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
                 document.getElementById("robot_selected").innerHTML = "None";
+                document.getElementById("robot_level").innerHTML = "0";
             }
         }
     }
@@ -227,6 +234,7 @@ function robot8() {
                 player.robot_8_selected = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
                 document.getElementById("robot_selected").innerHTML = "None";
+                document.getElementById("robot_level").innerHTML = "0";
             }
         }
     }
@@ -256,6 +264,7 @@ function robot9() {
                 player.robot_9_selected = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
                 document.getElementById("robot_selected").innerHTML = "None";
+                document.getElementById("robot_level").innerHTML = "0";
             }
         }
     }
@@ -285,6 +294,7 @@ function robot10() {
                 player.robot_10_selected = false;
                 document.getElementById("robot_electricity_text").innerHTML = "Generate Electricity";
                 document.getElementById("robot_selected").innerHTML = "None";
+                document.getElementById("robot_level").innerHTML = "0";
             }
         }
     }
