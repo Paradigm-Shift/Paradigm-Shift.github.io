@@ -119,6 +119,16 @@ var player = {
     robot_processors_8_add_number: 1,
     robot_processors_9_add_number: 1,
     robot_processors_10_add_number: 1,
+    robot_1_level: 1,
+    robot_2_level: 1,
+    robot_3_level: 1,
+    robot_4_level: 1,
+    robot_5_level: 1,
+    robot_6_level: 1,
+    robot_7_level: 1,
+    robot_8_level: 1,
+    robot_9_level: 1,
+    robot_10_level: 1,
     whatever_area: 10,
     whatever_area_name: "10px"
 };
