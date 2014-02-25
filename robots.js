@@ -441,60 +441,70 @@ function robotUpgrade(){
             if (player.robot_1_level < 10) {
                 if (player.ai_chips > 0) {
                     player.ai_chips -= 1;
+                    player.robot_1_level++;
                 }
             }
         } else if (player.robot_2_selected === true) {
             if (player.robot_2_level < 10) {
                 if (player.ai_chips > 0) {
                     player.ai_chips -= 1;
+                    player.robot_2_level++;
                 }
             }
         } else if (player.robot_3_selected === true) {
             if (player.robot_3_level < 10) {
                 if (player.ai_chips > 0) {
                     player.ai_chips -= 1;
+                    player.robot_3_level++;
                 }
             }
         } else if (player.robot_4_selected === true) {
             if (player.robot_4_level < 10) {
                 if (player.ai_chips > 0) {
                     player.ai_chips -= 1;
+                    player.robot_4_level++;
                 }
             }
         } else if (player.robot_5_selected === true) {
             if (player.robot_5_level < 10) {
                 if (player.ai_chips > 0) {
                     player.ai_chips -= 1;
+                    player.robot_5_level++;
                 }
             }
         } else if (player.robot_6_selected === true) {
             if (player.robot_6_level < 10) {
                 if (player.ai_chips > 0) {
                     player.ai_chips -= 1;
+                    player.robot_6_level++;
                 }
             }
         } else if (player.robot_7_selected === true) {
             if (player.robot_7_level < 10) {
                 if (player.ai_chips > 0) {
                     player.ai_chips -= 1;
+                    player.robot_7_level++;
                 }
             }
         } else if (player.robot_8_selected === true) {
             if (player.robot_8_level < 10) {
                 if (player.ai_chips > 0) {
                     player.ai_chips -= 1;
+                    player.robot_8_level++;
                 }
             }
         } else if (player.robot_9_selected === true) {
             if (player.robot_9_level < 10) {
                 if (player.ai_chips > 0) {
                     player.ai_chips -= 1;
+                    player.robot_9_level++;
                 }
             }
         } else if (player.robot_10_selected === true) {
             if (player.robot_10_level < 10) {
                 if (player.ai_chips > 0) {
                     player.ai_chips -= 1;
+                    player.robot_10_level++;
                 }
             }
         }
