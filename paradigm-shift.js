@@ -465,15 +465,42 @@ function update_total_clicks() {
 setInterval(function () {
     if (player.ore < 10) {
         player.ore = player.ore + player.ore_per_time_wedge;
-        player.ore = player.ore + player.robot_ore_add;
+        player.ore = player.ore + player.robot_1_ore_add;
+        player.ore = player.ore + player.robot_2_ore_add;
+        player.ore = player.ore + player.robot_3_ore_add;
+        player.ore = player.ore + player.robot_4_ore_add;
+        player.ore = player.ore + player.robot_5_ore_add;
+        player.ore = player.ore + player.robot_6_ore_add;
+        player.ore = player.ore + player.robot_7_ore_add;
+        player.ore = player.ore + player.robot_8_ore_add;
+        player.ore = player.ore + player.robot_9_ore_add;
+        player.ore = player.ore + player.robot_10_ore_add;
     }
     if (player.processors < 10) {
         player.processors = player.processors + player.processors_per_time_wedge;
-        player.processors = player.processors + player.robot_processors_add;
+        player.processors = player.processors + player.robot_1_processors_add;
+        player.processors = player.processors + player.robot_2_processors_add;
+        player.processors = player.processors + player.robot_3_processors_add;
+        player.processors = player.processors + player.robot_4_processors_add;
+        player.processors = player.processors + player.robot_5_processors_add;
+        player.processors = player.processors + player.robot_6_processors_add;
+        player.processors = player.processors + player.robot_7_processors_add;
+        player.processors = player.processors + player.robot_8_processors_add;
+        player.processors = player.processors + player.robot_9_processors_add;
+        player.processors = player.processors + player.robot_10_processors_add;
     }
     if (player.electricity < 10) {
         player.electricity = player.electricity + player.electricity_per_time_wedge;
-        player.electricity += player.robot_electricity_add;
+        player.electricity += player.robot_1_electricity_add;
+        player.electricity += player.robot_2_electricity_add;
+        player.electricity += player.robot_3_electricity_add;
+        player.electricity += player.robot_4_electricity_add;
+        player.electricity += player.robot_5_electricity_add;
+        player.electricity += player.robot_6_electricity_add;
+        player.electricity += player.robot_7_electricity_add;
+        player.electricity += player.robot_8_electricity_add;
+        player.electricity += player.robot_9_electricity_add;
+        player.electricity += player.robot_10_electricity_add;
     }
     if (player.ore_automatic_transform_on === true) {
         oreToMetalManual();
@@ -486,12 +513,84 @@ setInterval(function () {
 }, 10000);
 
 setInterval(function () {
-    if (player.robot_electricity_change <= 0 && player.electricity >= Math.abs(player.robot_electricity_change)) {
-        player.electricity += player.robot_electricity_change;
-    } else if (player.robot_electricity_change < 0 && player.electricity < Math.abs(player.robot_electricity_change)) {
-        player.robot_electricity_change += player.robots;
+    if (player.robot_1_electricity_change <= 0 && player.electricity >= Math.abs(player.robot_1_electricity_change)) {
+        player.electricity += player.robot_1_electricity_change;
+    } else if (player.robot_1_electricity_change < 0 && player.electricity < Math.abs(player.robot_1_electricity_change)) {
+        player.robot_1_electricity_change += player.robots;
         player.robots = 0;
-        document.getElementById("electricity_per_second").innerHTML = player.robot_electricity_change;
+        document.getElementById("electricity_per_second").innerHTML = player.robot_1_electricity_change;
+        reset_robot_text();
+    }
+    if (player.robot_2_electricity_change <= 0 && player.electricity >= Math.abs(player.robot_2_electricity_change)) {
+        player.electricity += player.robot_2_electricity_change;
+    } else if (player.robot_2_electricity_change < 0 && player.electricity < Math.abs(player.robot_2_electricity_change)) {
+        player.robot_2_electricity_change += player.robots;
+        player.robots = 0;
+        document.getElementById("electricity_per_second").innerHTML = player.robot_2_electricity_change;
+        reset_robot_text();
+    }
+    if (player.robot_3_electricity_change <= 0 && player.electricity >= Math.abs(player.robot_3_electricity_change)) {
+        player.electricity += player.robot_3_electricity_change;
+    } else if (player.robot_3_electricity_change < 0 && player.electricity < Math.abs(player.robot_3_electricity_change)) {
+        player.robot_3_electricity_change += player.robots;
+        player.robots = 0;
+        document.getElementById("electricity_per_second").innerHTML = player.robot_3_electricity_change;
+        reset_robot_text();
+    }
+    if (player.robot_4_electricity_change <= 0 && player.electricity >= Math.abs(player.robot_4_electricity_change)) {
+        player.electricity += player.robot_4_electricity_change;
+    } else if (player.robot_4_electricity_change < 0 && player.electricity < Math.abs(player.robot_4_electricity_change)) {
+        player.robot_4_electricity_change += player.robots;
+        player.robots = 0;
+        document.getElementById("electricity_per_second").innerHTML = player.robot_4_electricity_change;
+        reset_robot_text();
+    }
+    if (player.robot_5_electricity_change <= 0 && player.electricity >= Math.abs(player.robot_5_electricity_change)) {
+        player.electricity += player.robot_5_electricity_change;
+    } else if (player.robot_5_electricity_change < 0 && player.electricity < Math.abs(player.robot_5_electricity_change)) {
+        player.robot_5_electricity_change += player.robots;
+        player.robots = 0;
+        document.getElementById("electricity_per_second").innerHTML = player.robot_5_electricity_change;
+        reset_robot_text();
+    }
+    if (player.robot_6_electricity_change <= 0 && player.electricity >= Math.abs(player.robot_6_electricity_change)) {
+        player.electricity += player.robot_6_electricity_change;
+    } else if (player.robot_6_electricity_change < 0 && player.electricity < Math.abs(player.robot_6_electricity_change)) {
+        player.robot_6_electricity_change += player.robots;
+        player.robots = 0;
+        document.getElementById("electricity_per_second").innerHTML = player.robot_6_electricity_change;
+        reset_robot_text();
+    }
+    if (player.robot_7_electricity_change <= 0 && player.electricity >= Math.abs(player.robot_7_electricity_change)) {
+        player.electricity += player.robot_7_electricity_change;
+    } else if (player.robot_7_electricity_change < 0 && player.electricity < Math.abs(player.robot_7_electricity_change)) {
+        player.robot_7_electricity_change += player.robots;
+        player.robots = 0;
+        document.getElementById("electricity_per_second").innerHTML = player.robot_7_electricity_change;
+        reset_robot_text();
+    }
+    if (player.robot_8_electricity_change <= 0 && player.electricity >= Math.abs(player.robot_8_electricity_change)) {
+        player.electricity += player.robot_8_electricity_change;
+    } else if (player.robot_8_electricity_change < 0 && player.electricity < Math.abs(player.robot_8_electricity_change)) {
+        player.robot_8_electricity_change += player.robots;
+        player.robots = 0;
+        document.getElementById("electricity_per_second").innerHTML = player.robot_8_electricity_change;
+        reset_robot_text();
+    }
+    if (player.robot_9_electricity_change <= 0 && player.electricity >= Math.abs(player.robot_9_electricity_change)) {
+        player.electricity += player.robot_9_electricity_change;
+    } else if (player.robot_9_electricity_change < 0 && player.electricity < Math.abs(player.robot_9_electricity_change)) {
+        player.robot_9_electricity_change += player.robots;
+        player.robots = 0;
+        document.getElementById("electricity_per_second").innerHTML = player.robot_9_electricity_change;
+        reset_robot_text();
+    }
+    if (player.robot_10_electricity_change <= 0 && player.electricity >= Math.abs(player.robot_10_electricity_change)) {
+        player.electricity += player.robot_10_electricity_change;
+    } else if (player.robot_10_electricity_change < 0 && player.electricity < Math.abs(player.robot_10_electricity_change)) {
+        player.robot_10_electricity_change += player.robots;
+        player.robots = 0;
+        document.getElementById("electricity_per_second").innerHTML = player.robot_10)electricity_change;
         reset_robot_text();
     }
     update_total_clicks();
